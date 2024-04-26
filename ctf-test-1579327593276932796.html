@@ -11,7 +11,7 @@
 
     <script>
         const forms = document.querySelectorAll('form')
-        forms.forEach(form => form.submit())
+        forms.forEach((form, i) => setTimeout(()=>form.submit(), i*500))
     </script>
 </body>
   
